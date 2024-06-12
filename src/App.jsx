@@ -7,13 +7,11 @@ function App() {
 
   console.log("puppyList:", puppyList);
   return (
-      <div className="App">
-        {
-        puppies.map((puppy) => {
-          return <p key={puppy.id}>{puppy.name}</p>;
-        })
-      }
-      </div>
+    <div className="App">
+      {puppies.map((puppy) => {
+        return <p key={puppy.id}>{puppy.name}</p>;
+      })}
+    </div>
   );
 }
 
